@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SEARCH</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/772775928a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="dark">
+    <!-- Header -->
+    <header>
+        <div class="header-cont">
+            <nav>
+                <a href="index.html" class="logo-with-title">
+                     <p><img src="images/favicon.ico" alt="Home"/>What to watch?</p>
+                </a>
+                <div class="nav-links">
+                    <button id="button-demo" onclick="changeColor()" ><i class="far fa-sun"></i></button> 
+                    <a href="index.html#how-to">How To Use</a>
+                    <a href="index.html#start">Get Started</a>
+                    <a href="index.html#landing-page">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-main-text">
+            <h1>choose specifics</h1>
+        </div>
+        <div class="search-criteria">
+            <form action="">
+
+                <label for="genre" id="genre-label">genre: </label>
+                <ul class="genre-cb">
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                <li><input type="checkbox" id="genre1" name="genre1" value="Genre1"><label for="genre1" id="genre-checkbox">Genre 1</label></li>
+                </ul>
+
+                <label for="country" id="country-label">country: </label>
+                <ul class="country-cb">
+                    <li><input type="checkbox" id="country2" name="country1" value="Country"><label for="country1" id="country-checkbox">Germany</label></li>
+                    <li><input type="checkbox" id="country2" name="country2" value="Country"><label for="country2" id="country-checkbox">Lithuania</label></li>
+                    <li><input type="checkbox" id="country2" name="country3" value="Country"><label for="country3" id="country-checkbox">USA</label></li>
+                    <li><input type="checkbox" id="country2" name="country4" value="Country"><label for="country4" id="country-checkbox">Japan</label></li>
+                    <li><input type="checkbox" id="country2" name="country5" value="Country"><label for="country5" id="country-checkbox">Eritrea</label></li>
+                </ul>
+                
+
+                <label for="type" id="type-label">type: </label>
+                <input type="checkbox" id="type3" name="movie" value="Movie">
+                <label for="type1" id="type-checkbox">Movie</label>
+                <input type="checkbox" id="type3" name="cartoon" value="Cartoon">
+                <label for="type2" id="type-checkbox">Cartoon</label>
+                <input type="checkbox" id="type3" name="tv-show" value="Tv-show">
+                <label for="type3" id="type-checkbox">Tv-Show</label>
+
+                <label for="year" id="year-label">year: </label>
+                <label for="from-year" id="year">from</label><input type="number" id="from-value" name="from" min="1910" max="2019">
+                <label for="until-year" id="year">until</label><input type="number" id="until-value" name="until" min="1911" max="2020">
+
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <div class="go-back">
+                <a href="index.html">HOME</a>
+            </div>
+        </div>
+    </main>
+   <!-- Footer -->
+    <footer>
+        <img src="images/favicon.ico" alt="Home"/>
+        <p>What to Watch?</p>
+        <p>2021</p>
+    </footer>
+</body>
+</html>

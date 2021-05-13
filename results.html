@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RESULTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/772775928a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="dark">
+    <!-- Header -->
+    <header>
+        <div class="header-cont">
+            <nav>
+                <a href="index.html" class="logo-with-title">
+                     <p><img src="images/favicon.ico" alt="Home"/>What to watch?</p>
+                </a>
+                <div class="nav-links">
+                    <button id="button-demo" onclick="changeColor()" ><i class="far fa-sun"></i></button> 
+                    <a href="index.html">Home</a>
+                    <a href="#start">Get Started</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="results-text">
+                <h1>Results for your search</h1>
+        </div>
+        <div id="res-container" class="container"> 
+            <div class="exact-matches">
+                <h2>exact matches</h2>
+            </div>
+            <div class="grid-demo">
+                <div class="card" id="card-demo">
+                    <button id="res-button" onclick="openCard()">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+            </div>
+            <div class="matches-genre">
+                <h2>matches <...> </h2>
+            </div>
+            <div class="grid-demo">
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+                <div class="card" id="card-demo">
+                    <button id="res-button">MOVIE TITLE</button>
+                </div>
+            </div>
+<!-- RESULTS CARD FOR A MOVIE-->
+            <div id="res-card" class="results-card">
+                <h1 id="title-text">TITLE</h1>
+                <!-- <a href="#" class="fave-button"><i class="fab fa-gratipay"></i></a> -->
+                <a href="javascript:void(0)" class="close-button" onclick="closeCard()"><i class="fas fa-times"></i></a>
+                <div class="descr-container" id="description">
+                    <p><b>Genre:</b> Action, Sci-fi</p>
+                    <p><b>Year:</b> 1995</p>
+                    <p><b>Duration:</b> 90 minutes</p>
+                    <p><b>Producer:</b> Christopher Nolan</p>
+                    <p><b>Starring:</b> Anne Hathaway, Bil Irwin</p>
+                    <p><b>Budget:</b> $165 million</p>
+
+                </div>
+                <img id="poster" src="images/default-thumbnail.jpg" alt="Movie Poster">
+                <p id="rating">4.5/10</p>
+                <p id="movie-desc">With humanity teetering on the brink of extinction, a group of astronauts travels through a wormhole in search of another inhabitable planet.
+                </p>
+                <iframe id="movie-trailer" width="250" height="150" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                <div class="reviews">
+                    <div class="review-demo"><i class="fas fa-user"></i>this is review</div>
+                    <div class="review-demo"><i class="fas fa-user"></i>this is review</div>
+                    <div class="review-demo"><i class="fas fa-user"></i>this is review</div>
+                    <div class="review-demo"><i class="fas fa-user"></i>this is review</div>
+                </div>
+                <!-- <a href="" id="card-button1">WATCH LATER</a> -->
+                <!--<a href="" id="card-button2">WATCH</a> -->
+                <div class="drop-down" id="card-button2">
+                    <button class="drop-button">WATCH</button>
+                    <div class="drop-down-content">
+                        <a href="https://www.netflix.com/kr-en/title/70305903?source=35" target="_blank" id="netflix_link">Netflix</a>
+                        <a href="javascript:void(0)" id="amazon_link">Amazon</a>
+                        <a href="javascript:void(0)" id="another_link">Another</a>
+                    </div>
+                </div>   
+                <!-- <a href="" id="card-button3">WATCHED</a> -->
+        </div>
+        </div>
+
+        
+<!-- LINKS ON THE BOTTOM OF RESULTS PAGE -->
+        <div class="search-return">
+            <div class="search-again">
+                <a href="search.html">SEARCH AGAIN</a>
+            </div>
+            <div class="go-back">
+                <a href="index.html">GO BACK</a>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <img src="images/favicon.ico" alt="Home"/>
+        <p>What to Watch?</p>
+        <p>2021</p>
+    </footer>
+    <script src='main.js'></script>
+
+</body>
+</html>

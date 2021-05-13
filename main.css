@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Nanum+Pen+Script&family=New+Tegomin&family=Roboto+Mono:wght@100;300&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+/* Main style */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "New Tegomin";
+    font-size: 12px;
+    scroll-behavior: smooth;
+    color: white;
+    /*background-color: rgb(22, 24, 51);*/
+    
+    /*background-image: linear-gradient(rgb(22, 24, 51), rgb(23, 24, 39));*/
+    box-sizing: border-box;
+}
+
+body.light {
+    background-color: rgb(152, 128, 136);
+}
+
+body.dark {
+    background-color: #080030;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(98, 0, 255);
+    margin: 5rem;
+}
+
+h3 {
+    font-family: "Roboto Mono";
+    color: rgb(64, 224, 157);
+    text-align: left;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'New Tegomin', serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+a {
+    font-family: "Roboto Mono";
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 900;
+}
+
+a:hover {
+    color: rgb(238, 183, 252);
+}
+
+
+.container {
+    margin: 5rem;
+    padding: 4rem 5rem;
+}
+
+footer {
+    font-size: 1.2rem;
+    padding: 2rem;
+    height: 5vh;
+    /*background-color: rgb(11, 12, 34);*/
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.1rem;
+    color:#67ccaa;
+    font-family: "Roboto Mono";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: rgb(11, 12, 34);
+}
+
+.nav-links {
+    float: right;
+    font-size: 1.2rem;
+    margin: 0.3rem 0.5rem;
+    color: midnightblue;
+}
+.logo-with-title {
+    float: left;
+    margin-top: 0.2rem !important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo-with-title p{
+    color: rgb(58, 58, 175);
+    font-size: 19px;
+}
+
+#button-demo {
+    /*background-color: rgb(151, 47, 255);*/
+    color: rgb(151, 47, 255);
+    text-decoration: wavy;
+    border: none;
+    margin: 0px 0.2rem;
+    border-radius: 100px;
+}
+#button-demo2 {
+    background-color: rgb(85, 47, 255);
+    text-decoration: wavy;
+    border: none;
+    margin: 0px 0.2rem;
+    border-radius: 80px;
+}
+.btn:hover {
+    opacity: 50%;
+}
+
+.landing-page .container, .how-to-page .container{
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    line-height: 1.5em;
+    border:solid 3px rgb(190, 218, 255);
+  }
+  .how-to-page .container {
+      width: 45%;
+      height: 40%;
+  }
+
+
+/* -------------------------------------HOME PAGE------------------------------------- */
+
+.landing-page {
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.meesage-page {
+    padding: 10rem;
+    margin: auto;
+}
+.main-message .container{
+    border: none !important;
+}
+
+.main-message h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 92px;
+    color:rgb(80, 73, 172);
+    text-shadow: 8px -1.2px #fff67f;
+    font-family: "Helvetica";
+}
+
+.intro-text {
+    display: inline-block;
+    /*padding: 30px;*/
+    width: 30%;
+    /*margin: 20px;*/
+    border-radius: 10px;
+    text-align: center;
+    color: mediumslateblue;
+    margin-left: 40rem;
+}
+.how-to-two {
+    margin-left: 5rem;
+}
+#choose{
+    padding: 20px;
+    letter-spacing: 4px;
+    margin-left: 2rem;
+}
+
+.intro-text p, .how-to-text p, .how-to-two p {
+    font-family: "Roboto Mono";
+    text-align: justify;
+    font-weight: 600;
+    color:rgb(225, 228, 252);
+}
+
+.intro-text h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: left;
+    color:rgb(98, 0, 255);
+    text-shadow: 4px -1.5px #ff7fbf;
+}
+
+.how-to-text {
+    display: inline-block;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.how-to-two {
+    display: inline-block;
+    width: 30%;
+    border-radius: 10px;
+}
+.how-to-text h3{
+    margin-left: 2rem;
+}
+.how-to-two h3 {
+    margin-left: 3rem;
+}
+.how-to-text p, .how-to-two p {
+    text-align: justify;
+}
+
+.how-to-text h2, .how-to-two h2{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color:rgb(0, 47, 255);
+    text-shadow: 4px -1.5px #7fffaa;
+}
+
+.how-to-text:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 5px;
+    display: block;
+  }
+.expl-text p {
+    font-family: "Roboto Mono";
+    text-align: justify;
+    font-weight: 600;
+}
+#get-started {
+    text-align: center;
+}
+.get-started-text h1 {
+    margin: 2rem;
+    letter-spacing: 5px;
+}
+
+.scroll-down i {
+    color: #fafafa;
+    transition: color 650ms;
+    margin-top: 13rem;
+    margin-left: 30rem;
+    font-size: 3.5rem;
+  }
+  .scroll-down i:hover {
+    color: rgb(255, 136, 215);
+  }
+
+ 
+/* LET'S GET STARTED */
+
+.specific-search {
+    display: inline-block;
+    background-color: rgb(187, 153, 255);
+    width: 300px;
+    padding: 20px;
+    padding-right: 35px;
+    margin: 20px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.random-search {
+    display: inline-block;
+    background-color: rgb(179, 102, 255);
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.random-search:hover{
+    background-color: rgba(179, 102, 255, 0.4);
+    
+}
+.specific-search:hover{
+    background-color: rgba(187, 153, 255, 0.4);
+}
+/* -------------------------------------SEARCH PAGE------------------------------------- */
+.search-main-text {
+    text-align: center;
+    margin-top: 8rem;
+    width: auto;
+}
+.search-main-text h1 {
+    font-size: 52px;
+    /*background: -webkit-linear-gradient(rgb(119, 33, 177), rgb(123, 125, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color:#602058;
+    text-shadow: 5px -1.5px #6060d0;
+    font-family: "Helvetica";
+}
+.search-criteria {
+    background-color: rgb(23, 31, 64);
+    margin: 8rem;
+    padding: 30px;
+    border: 0.15px solid mintcream;
+    text-align: center;
+}
+#genre-label, #country-label, #type-label, #year-label, #submit {
+    color: #3f0f6b;
+    letter-spacing: 2px;
+    font-family: "Antonio";
+    font-weight: 900;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 30px;
+}
+
+.genre-cb, .country-cb {
+    list-style: none; 
+    margin: 5px;
+    padding: 20px;
+    text-align: justify;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
+
+#genre-label {
+    background-color: #6b6bff;
+}
+#country-label {
+    background-color: #ec9eb5;
+}
+#type-label {
+    background-color: #7db9e0;
+}
+#year-label {
+    background-color: #7328ff;
+}
+#year{
+    margin: 7px;
+}
+
+#genre-checkbox, #country-checkbox, #type-checkbox, #year {
+    font-family: "Roboto Mono";
+    font-size: 18px;
+}
+
+#submit {
+    margin-left: 25rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 250px;
+}
+
+#submit:hover{
+    background-color: #c9c9c9;
+}
+
+
+
+
+/* -------------------------------------RESULTS PAGE------------------------------------- */
+
+
+.results-text {
+    text-align: left;
+    margin-top: 7rem;
+    width: auto;
+}
+.results-text h1 {
+    font-size: 52px;
+    /*background: -webkit-linear-gradient(rgb(119, 33, 177), rgb(123, 125, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color:rgb(166, 180, 245);
+    text-shadow: 5px -1.5px #c743b1;
+    font-family: "Helvetica";
+}
+.exact-matches {
+    /*background-color: rgb(192, 241, 93);*/
+    /*background-image: linear-gradient(rgb(192, 241, 93), #76dd31);*/
+    background-image: linear-gradient(to left, rgba(192, 241, 93, 0), rgba(192, 241, 93, 1));
+    width: 100%;
+    font-size: 12px;
+    padding: 0px;
+    border-radius: 20px;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.matches-genre {
+    /*background-color: rgb(255, 240, 155);*/
+    /*background-image: linear-gradient(rgb(255, 233, 109), #ffaa48);*/
+    background-image: linear-gradient(to left, rgba(255, 233, 109, 0), rgba(255, 233, 109, 1));
+    width: 100%;
+    padding: 0px;
+    border-radius: 20px;
+}
+.matches-genre h2, .exact-matches h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 5px;
+    height: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0px;
+    border-radius: 5px;
+    border: 0.5px solid mintcream;
+}
+
+.card-desc {
+    height: auto;
+    width: auto;
+    text-align: center;
+    background-color: rgb(225, 228, 252);
+    margin: 0px;
+    padding: -50px;
+    
+}
+.card-desc h2, p{
+    color:rgb(22, 24, 51);
+    margin: 0px;
+}
+.card-desc p{
+    font-size: 15px;
+}
+
+.default-thumb {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.grid-demo {
+    /*background-image: linear-gradient(rgb(217, 170, 255), rgb(99, 67, 151));
+    /*background:rgb(202, 185, 248);*/
+    
+    /*box-shadow: 15px 15px #b0a8ff;*/
+    box-shadow: rgb(89, 86, 255) 0px 0px 0px 2px inset, #303085 10px -10px 0px -3px, rgb(98, 253, 95) 10px -10px, #303085 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, #303085 30px -30px 0px -3px, #fff457 30px -30px, #303085 40px -40px 0px -3px, #B82090 40px -40px;
+    padding: 2rem;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#res-container {
+    margin: 3em;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 3em;
+}
+
+
+.grid-demo button {
+    font-family: "Roboto Mono";
+    background-color: rgb(166, 180, 245);
+    font-weight: 500;
+    color:rgb(22, 24, 51);
+    width: 200px;
+    border: 0;
+}
+
+.search-again, .go-back{
+    margin: 2rem;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+}
+
+.search-return {
+    text-align: center;
+}
+#res-button{
+    margin: 0px;
+    font-family: "New Tegomin";
+    font-weight: 700;
+    width: auto;
+    margin-top: auto;
+}
+
+#card-demo, #card-demo1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/default-thumbnail.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* -------------------------------------RESULT CARD------------------------------------- */
+
+.results-card {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0.5rem;
+    right: 27rem;
+    background-color: rgb(225, 228, 252);
+    /*background-color: #1b082b;*/
+    font-size: 20px;
+    /*grid-template-columns: 150px, auto;
+    grid-template-rows: 15px, 25%, 5px, 15px, auto;*/
+    grid-template-columns: 100px 150px 100px 100px;
+    grid-template-rows: 50px 200px 100px 150px 80px;
+    gap: 3px 3px;
+    grid-template-areas:
+      "title title rating fav-close"
+      "movie-stats movie-stats poster poster"
+      "movie-desc movie-desc movie-desc movie-desc"
+      "trailer trailer reviews reviews"
+      "bottom-buttons bottom-buttons bottom-buttons bottom-buttons";  
+    overflow: auto;
+    width: 475px;
+    height: 600px;
+    border-radius: 30px;
+    padding: 5px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+#card-button1, #card-button2, #card-button3{
+    background:#93c5b0;
+    width: 120px;
+    /*padding: 5px;*/
+    height: 20px;
+    /*margin: 2px;*/
+    border-radius: 5px;
+    grid-area: bottom-buttons;
+    
+    font-family: "New Tegomin";
+    font-size: 17px;
+    
+}
+#card-button1 {
+    justify-self: start;
+    align-self: center;
+
+}
+#card-button2{
+    margin-top: 25px;
+    text-align: center;
+    justify-self: center;
+    align-self: start;
+}
+#card-button3{
+    justify-self: end;
+    align-self: center;
+}
+
+.drop-down-content {
+    background: #93c5b0;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    width: 120px;
+}
+.drop-down-content a {
+    font-family: "New Tegomin";
+    font-size: 12px;
+    float: none;
+    color: #080030;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.drop-down-content a:hover{
+    background-color: #80B0C8;
+} 
+
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+.drop-button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    background:#93c5b0;
+    text-align: center;
+    font-family: "New Tegomin";
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.drop-button:hover {
+    background-color: #81ad9b;
+    color: rgb(238, 183, 252);
+}
+
+#description {
+    border: 2px solid #A890E8;
+    height: auto;
+    width:auto;
+    margin: 5px;
+    text-align: left;
+    grid-area: movie-stats;
+    padding: 10px;
+}
+
+#description p{
+    color:rgb(127, 141, 204);
+    font-family: Verdana;
+}
+
+#title-text{
+    grid-area: title;
+    color:#ffe9f9;
+    margin: 5px;
+    text-shadow: 2px -1.5px #8949dd;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: left;
+    align-self: center;
+    padding: 5px;
+    font-size: 36px;
+    width: 250px;
+    height: 25px;
+}
+
+#poster {
+    margin: 5px;
+    height: 193px;
+    width: 175px;
+    grid-area: poster;
+    justify-self: center;
+    border-radius: 10px;
+}
+.descr-container p {
+    text-align: left;
+}
+
+#rating {
+    display: none;
+    text-align: center;
+    color: #fdff8e;
+    font-size: 24px;
+    grid-area: rating;
+    height: 50px;
+    padding: 3px;
+    margin: auto;
+}
+#movie-trailer {
+    margin: 5px;
+    grid-area: trailer;
+}
+
+#movie-desc {
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: left;
+    font-size: 13px;
+    border: 2px solid #A890E8;
+    overflow-y: auto;
+    grid-area: movie-desc;
+    margin: 5px;
+    padding: 5px;
+    color: #7c9baf;
+}
+
+.reviews {
+    border: 0.15px solid rgb(17, 19, 51);
+    border-radius: 10px;
+    background:#1b0a30;
+    font-size: 10px;
+    grid-area: reviews;
+    overflow-y: auto;
+    margin: 2px;
+    padding: 3.5px;
+    height: 150px;
+}
+
+.fave-button {
+    font-size: 30px;
+    margin: 2px;
+    grid-area: fav-close;
+    justify-self: center;
+    border: none;
+    color: #B82090;
+}
+.close-button {
+    grid-area: fav-close;
+    justify-self: end;
+    margin: 2px;
+    font-size: 30px;
+    color: grey;
+    border: none;
+}
+
+.review-demo {
+    font-size: 20px;
+    text-align: left;
+    background-color:#B0C8D8;
+    color: black;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 3px;
+    overflow-x: auto;
+}
+
+/* ANIMATION?? */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
