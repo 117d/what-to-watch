@@ -1,4 +1,9 @@
+const apiKey = "aee9c280a62595241423e04a067bc3ce";
+//https://api.themoviedb.org/3/genre/movie/list?api_key=aee9c280a62595241423e04a067bc3ce&language=en-US
+
 //SHOW MOVIE CARD
+
+
 
 function openCard() {
   document.getElementById("res-card").style.display = "grid";
@@ -33,6 +38,8 @@ function titleIncrease() {
     document.getElementById("demoText").style.fontSize = "16px"
   }
 }
+
+
 
 
 

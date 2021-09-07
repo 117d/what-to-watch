@@ -137,11 +137,11 @@ header {
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     line-height: 1.5em;
     border:solid 3px rgb(190, 218, 255);
-  }
-  .how-to-page .container {
+}
+.how-to-page .container {
       width: 45%;
       height: 40%;
-  }
+}
 
 
 /* -------------------------------------HOME PAGE------------------------------------- */
@@ -181,7 +181,7 @@ header {
 .how-to-two {
     margin-left: 5rem;
 }
-#choose{
+#choose {
     padding: 20px;
     letter-spacing: 4px;
     margin-left: 2rem;
@@ -520,11 +520,13 @@ header {
 /* -------------------------------------RESULT CARD------------------------------------- */
 
 .results-card {
-    display: none;
-    position: fixed;
-    z-index: 1;
+    /*display: none;*/
+    display: grid;
+    /*position: fixed;
+    /*z-index: 1;*/
     bottom: 0.5rem;
-    right: 27rem;
+    /*right: 27rem;*/
+    margin-left: 25rem;
     background-color: rgb(225, 228, 252);
     /*background-color: #1b082b;*/
     font-size: 20px;
@@ -544,10 +546,10 @@ header {
     height: 600px;
     border-radius: 30px;
     padding: 5px;
-    -webkit-animation-name: slideIn;
+    /*-webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s*/
 }
 
 #card-button1, #card-button2, #card-button3{
@@ -635,6 +637,7 @@ header {
 }
 
 #title-text{
+    overflow:hidden;
     grid-area: title;
     color:#ffe9f9;
     margin: 5px;
@@ -749,3 +752,173 @@ header {
     from {opacity: 0} 
     to {opacity: 1}
   }
+
+
+/* ---------------------------------------------------- LOG IN -------------------------------------------------*/
+.login-main-text h1 {
+    font-size: 52px;
+    /*background: -webkit-linear-gradient(rgb(119, 33, 177), rgb(123, 125, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color:#7c3043;
+    text-shadow: 5px -1.5px #85cee0;
+    font-family: "Helvetica";
+}
+.login-main-text, .signup-main-text, .admin-main-text {
+    text-align: center;
+    margin-top: 8rem;
+    width: auto;
+}
+
+.signup-main-text h1 {
+    font-size: 52px;
+    /*background: -webkit-linear-gradient(rgb(119, 33, 177), rgb(123, 125, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color:#1f4b4d;
+    text-shadow: 5px -1.5px #ff95ed;
+    font-family: "Helvetica";
+}
+
+.login-form {
+    background-color: rgb(23, 31, 64);
+    margin: 8rem;
+    padding: 30px;
+    border: 0.15px solid mintcream;
+    text-align: center;
+    font-size: 15px;
+}
+.form-element{
+    margin: 15px;
+    font-family: "Roboto Mono";
+}
+
+#logbtn, #submitbtn {
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 20px;
+    width: 100px;
+    background-color: rgb(226, 226, 226);
+    color:rgb(124, 104, 240);
+    border-radius: 25px !important;
+}
+#lobgtn:hover, #submitbtn:hover {
+    background-color: slategrey !important;
+}
+
+#inputfield {
+    margin: 50px !important;
+}
+
+
+
+/* -------------------------------------------- USER PROFILE --------------------------------------------------------*/
+.user-layout {
+    background-color: rgb(23, 31, 64);
+    margin: 8rem;
+    padding: 30px;
+    border: 0.15px solid mintcream;
+    text-align: center;
+}
+.admin-main-text h1 {
+    font-size: 52px;
+    /*background: -webkit-linear-gradient(rgb(119, 33, 177), rgb(123, 125, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color:#961313;
+    text-shadow: 5px -1.5px #ffb1fb;
+    font-family: "Helvetica";
+}
+
+/* ----------------------------------------------- ADMIN PAGE -----------------------------------------------------------*/
+.msg {
+    margin: 30px auto; 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #694c68; 
+    background: #dff0d8; 
+    border: 1px solid #b7bbff;
+    width: 50%;
+    text-align: center;
+}
+
+
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 20px;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    border: none;
+    margin: 5px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #cbcbcb;
+}
+th {
+    color:rgba(255, 233, 109, 1);
+    
+}
+tr:hover {
+    background: #7753b9;
+}
+
+form {
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 5px;
+}
+
+.input-group {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+}
+.input-group input {
+    font-family: 'New Tegomin', serif;
+    height: 45px;
+    margin: 10px;
+    padding: 5px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid rgb(73, 62, 221);
+}
+
+
+#details-text {
+    margin: 20px;
+    padding: 10px;
+    size: 50px;
+}
+
+#admin-button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    width: 250px;
+    color:rgb(93, 158, 255);
+    background-color: rgb(120, 108, 175);
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'New Tegomin', serif;
+    border: 1px solid rgb(166, 180, 245) !important;
+}
+
+#admin-button:hover{
+    background-color: #c9c9c9;
+}
