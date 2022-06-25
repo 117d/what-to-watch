@@ -4,4 +4,4 @@
 
 The Movie Database API was used.
 
-![alt text](https://github.com/117d/what-to-watch/blob/main/screenshot.jpeg)
+![Screenshot](https://github.com/117d/what-to-watch/blob/main/screenshot.jpeg?raw=true)
